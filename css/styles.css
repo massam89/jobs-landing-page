@@ -33,6 +33,12 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+
+@font-face {
+	font-family: myFont;
+	src: url('../webfonts/Vazir-Regular.ttf');
+  }
+
 body,
 html {
     width: 100%;
@@ -41,7 +47,7 @@ html {
 
 body, p {
 	color: #515867; 
-	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	font: 400 1rem/1.625rem myFont;
 }
 
 h1 {
@@ -1196,6 +1202,22 @@ a:hover.back-to-top {
 	padding: 2.5rem 1.5rem 1.5rem 1.75rem;
 	border-radius: 10px;
 	background-color: #f9f9f9;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-image {
+	width: 150px;
+	height: 150px;
+	margin: 0 10px;
+	border: 1px dashed black;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 
