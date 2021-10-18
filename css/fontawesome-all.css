@@ -2218,7 +2218,9 @@ readers do not read off random characters that represent icons */
   content: "\f05a"; }
 
 .fa-instagram:before {
-  content: "\f16d"; }
+  content: "\f16d";
+  font-size: 2rem;
+}
 
 .fa-intercom:before {
   content: "\f7af"; }
@@ -2872,7 +2874,8 @@ readers do not read off random characters that represent icons */
   content: "\f511"; }
 
 .fa-phone:before {
-  content: "\f095"; }
+  content: "\f095";
+font-size: 2rem; }
 
 .fa-phone-alt:before {
   content: "\f879"; }
@@ -3739,7 +3742,8 @@ readers do not read off random characters that represent icons */
   content: "\f62f"; }
 
 .fa-telegram:before {
-  content: "\f2c6"; }
+  content: "\f2c6";
+font-size: 2rem; }
 
 .fa-telegram-plane:before {
   content: "\f3fe"; }

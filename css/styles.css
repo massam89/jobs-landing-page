@@ -97,7 +97,7 @@ h6 {
 }
 
 .h1-large {
-	font-size: 2.75rem;
+	font-size: 3.5rem;
 	line-height: 3.5rem;
 	letter-spacing: -0.7px;
 }
@@ -1061,9 +1061,8 @@ input[type='checkbox'] {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 5.5rem;
-	padding-bottom: 1.5rem;
-	background-color: #f9f9f9;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .footer a {
@@ -1257,7 +1256,7 @@ a:hover.back-to-top {
 /*************************/	
 /* Min-width 768px */
 @media (min-width: 768px) {
-	
+
 	/* Header */
 	.header .btn-solid-lg {
 		margin-bottom: 0;
@@ -1304,6 +1303,7 @@ a:hover.back-to-top {
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1677,3 +1677,16 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+@media (max-width: 992px) {
+	.logo-style {
+		position: absolute;
+		top: 20px;
+		left:20px;
+		width: 100px;
+	}
+
+	.heading {
+		margin-top: 50px;
+	}
+}
