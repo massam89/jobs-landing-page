@@ -43,11 +43,17 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
 }
 
 body, p {
 	color: #515867; 
 	font: 400 1rem/1.625rem myFont;
+}
+
+hr {
+	border-bottom: 1px dashed gray;
 }
 
 h1 {
