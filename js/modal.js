@@ -1,20 +1,22 @@
 const images = document.getElementsByClassName('gallery-image')
 const modal = document.getElementById('modall')
-const modalClose = document.getElementsByClassName('modall-close')[0]
+const modalImage = document.getElementById('modall-image')
 
 Array.prototype.forEach.call(images, image => {
     image.addEventListener('click', (e) => {
         modal.style.display = 'block'
-        modal.childNodes[3].src = e.path[0].src
+        modalImage.src = e.path[0].src
 
-        modal.childNodes[3].classList.remove('transition');
+        modalImage.classList.remove('transition');
         setTimeout(() => {
-            modal.childNodes[3].classList.add('transition');
+            modalImage.classList.add('transition');
         }, 5)
     })
   });
 
-modalClose.addEventListener('click', () => {
-    modal.style.display = 'none'
-})
-
+modal.addEventListener('click', (e) => {
+    const isClickInside = modalImage.contains(e.target);
+    if (!isClickInside) {
+        modal.style.display = 'none'
+    }
+});

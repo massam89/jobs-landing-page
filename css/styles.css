@@ -1695,4 +1695,9 @@ a:hover.back-to-top {
 	.heading {
 		margin-top: 50px;
 	}
+
+	.transition{
+		width: 90%;
+		transition: width 0.5s;
+	  }
 }
