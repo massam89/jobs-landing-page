@@ -5,7 +5,8 @@ const modalImage = document.getElementById('modall-image')
 Array.prototype.forEach.call(images, image => {
     image.addEventListener('click', (e) => {
         modal.style.display = 'block'
-        modalImage.src = e.path[0].src
+        console.log(e);
+        modalImage.src = e.target.currentSrc
 
         modalImage.classList.remove('transition');
         setTimeout(() => {
